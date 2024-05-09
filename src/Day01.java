@@ -30,4 +30,22 @@ public class Day01 {
 
         System.out.println("Answer is: " + runningSum);
     }
+
+    public static void puzzleTwo(ArrayList<String> puzzle)
+    {
+        String[] numbers = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+        //change words to numbers
+        for(String curr: numbers) {
+            for (int i = 0; i < puzzle.size(); i++) {
+                puzzle.set(i, puzzle.get(i).replaceAll(curr, Integer.toString(i+1)));
+            }
+        }
+
+        System.out.println("Current List" + puzzle);
+
+
+
+        //call puzzle One
+        puzzleOne(puzzle);
+    }
 }

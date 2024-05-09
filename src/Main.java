@@ -18,7 +18,7 @@ public class Main {
 
         //System.out.println("Puzzle input is " + puzzleInput);
 
-        Day01.puzzleOne(puzzleInput);
+        Day01.puzzleTwo(puzzleInput);
 
 
 
